@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
+import { Header } from './components/Header';
+import { ReviewList } from './components/ReviewList';
+import { AppContainer } from './styles/app-styles';
 
 function App() {
   return (
-    <div className="App">
-     Hello
-    </div>
+    <AppContainer>
+     <Header />
+     <ReviewList />
+    </AppContainer>
   );
 }
 
