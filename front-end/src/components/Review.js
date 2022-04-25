@@ -1,6 +1,7 @@
 import React from 'react'
 import {ReviewCardContainer, ReviewCardTop, ReviewCardBottom} from '../styles/review-styles'
 import Rating from '@mui/material/Rating';
+import {Forum} from '@mui/icons-material';
 
 export const Review = ({review}) => {
     const formattedDate = review.published_at.split(' ').slice(1,4).join().replace(/,/g, '/')
