@@ -11,12 +11,13 @@ export const ReviewCardContainer = styled.div`
    
 `
 export const ReviewCardTop = styled.div`
-
+ 
     >p{
         white-space: nowrap;
         overflow: hidden;
         max-width: 15ch;
         text-overflow: ellipsis;
+        color: gray;
     }
 
    >h2{
@@ -73,6 +74,7 @@ export const SelectedReviewCardTop = styled.div`
 
    >p{
     padding: 0 2% 0 0;
+    color: gray;
     }
 `
 
@@ -125,4 +127,58 @@ export const CommentButton = styled.button`
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+`
+
+//comment component
+export const CommentContainer = styled.div`
+    background-color: white;
+    padding: 1% 0 0 4%;
+    margin: 2% 8% 0 8%;
+    height: 15vh;
+    filter: drop-shadow(3px 4px 2px rgb(0 0 0 / 0.2));
+`
+
+export const CommentCardTop = styled.div`
+       display: flex;
+       align-items: center;
+
+
+       >span{
+        position: absolute;
+        left: 95%;
+        :hover{
+          color: blue;
+          cursor: pointer;
+        }
+
+        >p{
+            padding: 0 2% 0 0;
+            color: gray;
+        }
+`
+
+export const CommentCardBottom = styled.div`
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2% 0;
+
+  >p{
+    color: gray;
+    padding: 0 3%;
+    font-size: 14px;
+  }
+
+  >h5{
+      font-weight: 500
+  }
+
+  >span{
+      position: absolute;
+      left: 95%;
+      :hover{
+          color: blue;
+          cursor: pointer;
+      }
+  }
 `

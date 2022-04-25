@@ -18,6 +18,7 @@ export const Review = ({review}) => {
         <ReviewCardBottom>
             <h5>{review.author}</h5>
             <p>{formattedDate}</p>
+            
         </ReviewCardBottom>
 
         
